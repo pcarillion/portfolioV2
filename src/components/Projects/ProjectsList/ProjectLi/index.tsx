@@ -47,11 +47,12 @@ export const ProjectLi = ({
         <div className="absolute inset-0 bg-white bg-opacity-10 dark:bg-opacity-0 pointer-events-none"></div>
       </div>
       <motion.div
-        className="h-full w-full flex flex-col justify-center items-end
-        absolute top-0 md:left-48"
-        style={{
-          x,
-        }}
+        className="h-full w-full flex flex-col justify-center items-end absolute top-0 md:left-48"
+        style={
+          {
+            // x,
+          }
+        }
       >
         <button
           onClick={() => setCurrentProject(index)}
@@ -67,9 +68,11 @@ export const ProjectLi = ({
       <motion.li
         ref={targetRef}
         className="text-4xl md:text-6xl h-full w-full relative snap-center md:px-48"
-        style={{
-          opacity: liOpacity,
-        }}
+        style={
+          {
+            // opacity: liOpacity,
+          }
+        }
       >
         {isMobile ? (
           LiContent
