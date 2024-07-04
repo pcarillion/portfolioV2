@@ -93,6 +93,17 @@ export const projectsList = [
     github: null,
   },
   {
+    title: "MP Site Vitrine",
+    picture: "MP.png",
+    tech: ["React"],
+    description:
+      "Dans le cadre d'une collaboration avec une designeuse, nous avions proposé un site vitrine pour montrer notre travail.",
+    gallery: ["MP2.png", "MP3.png", "MP4.png"],
+    date: "2020",
+    url: null,
+    github: null,
+  },
+  {
     title: "Women in War Publications",
     picture: "womeninwar.png",
     tech: ["Gatsby", "React", "Contentful"],
@@ -100,7 +111,7 @@ export const projectsList = [
       "Pour l'association Femaid / Women in war, j'ai développé la version numérique d'un livre de témoignages de femmes dans les pays en guerre pendant le Covid.",
     url: "https://womeninwarpublications.org/",
     gallery: ["womeninwar.png"],
-    date: "2022",
+    date: "2021",
     github: null,
   },
   {
@@ -110,6 +121,16 @@ export const projectsList = [
     description:
       "Pour un photographe, j'ai développé un porfolio. Aujourd'hui, le site n'est plus en ligne.",
     gallery: ["thomasjardin-big.png"],
+    date: "2020",
+    url: null,
+    github: null,
+  },
+  {
+    title: "Portfolio v1",
+    picture: "portfolioV1.png",
+    tech: ["React"],
+    description: "Mon premier porfolio en sortant d'études",
+    gallery: ["portfolioV12.png"],
     date: "2020",
     url: null,
     github: null,
