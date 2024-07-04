@@ -5,8 +5,9 @@ import { useCookies } from "next-client-cookies";
 
 export const useIsDM = () => {
   const cookies = useCookies();
-  const [isDM, setIsDM] = useState(cookies.get("x-theme") === "dark");
-  const dmCookie = cookies.get("x-theme");
+  let dmCookie = cookies.get("x-theme");
+  if (!dmCookie) dmCookie = "dark";
+  const [isDM, setIsDM] = useState(dmCookie === "dark");
   useEffect(() => {
     setIsDM(dmCookie === "dark");
   }, [dmCookie]);

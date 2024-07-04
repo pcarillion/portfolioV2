@@ -14,7 +14,7 @@ import { CookiesProvider } from "next-client-cookies/server";
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const baseUrl = process.env.BASE_URL || "https://paulcarillion.fr";
+  const baseUrl = process.env.BASE_URL || "https://paul-carillion.net";
   return {
     metadataBase: new URL(baseUrl),
     title: "Paul Carillion - Développeur web fullstack",
