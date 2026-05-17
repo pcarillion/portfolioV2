@@ -1,10 +1,41 @@
 export const projectsList = [
   {
+    title: "Ecov citoyens",
+    picture: "ecov.png",
+    tech: ["Next", "React", "Shopify", "Prisma"],
+    description:
+      "Au sein d'une équipe de 4 développeurs chez Nivalis Studio, j'ai participé au développement d'une plateforme citoyenne dédiée à la mobilité durable et au covoiturage local. Le site permet aux utilisateurs de proposer de nouvelles lignes de covoiturage grâce à une carte interactive, avec une expérience fluide pensée pour favoriser l'engagement territorial et simplifier la participation des citoyens.",
+    url: "https://citoyens.ecov.fr/",
+    date: "2025/2026",
+    gallery: ["ecov.png"],
+  },
+  {
+    title: "Route du champagne",
+    picture: "route-du-champagne-2.png",
+    tech: ["Next", "React", "PayloadJS"],
+    description:
+      "Au sein d'une équipe de 4 développeurs chez Nivalis Studio, j'ai contribué au développement du site de la Route du Champagne, une expérience web événementielle centrée sur la découverte des villages, caves et itinéraires de la région champenoise. Le projet intègre une carte interactive et un CMS headless avec PayloadJS afin de faciliter la gestion des contenus touristiques, pratiques et éditoriaux.",
+    url: "https://route-champagne.fr/",
+    date: "2025/2026",
+    gallery: ["route-du-champagne-2.png", "route-du-champagne.png"],
+  },
+  {
+    title: "Wespring",
+    picture: "wespring.png",
+    tech: ["Next", "React", "PayloadJS", "Prisma", "Shopify"],
+    description:
+      "Dans une squad de 4 développeurs chez Nivalis Studio, j'ai travaillé sur la refonte et l'évolution d'un site e-commerce Shopify pour une marque de lessive et de produits ménagers. Le projet mêle performance frontend, intégration e-commerce, gestion de catalogue, CMS headless et optimisation du parcours d'achat pour proposer une expérience utilisateur claire, rapide et orientée conversion.",
+    url: "https://wespring.com",
+    date: "2024/2026",
+    gallery: ["wespring.png"],
+  },
+  {
     title: "Portfolio",
     picture: "portfolio.png",
     github: "https://github.com/pcarillion/portfolioV2",
     tech: ["Next", "React", "TailwindCSS", "Framer Motion"],
-    description: "Mon portfolio 2024",
+    description:
+      "Portfolio personnel développé avec Next.js, React, TailwindCSS et Framer Motion pour présenter mes projets web, mes expériences fullstack et mon univers graphique. Le site met l'accent sur les animations, la performance, le responsive design et une navigation claire autour de mes réalisations professionnelles.",
     url: "/",
     date: "2024",
     gallery: ["portfolio.png"],
@@ -21,7 +52,7 @@ export const projectsList = [
       "v1 Contentful / v2 PayloadJS",
     ],
     description:
-      "Sudfa est un petit media franco-soudanais. J'ai designé, conçu et développé le site seul.",
+      "Sudfa est un média franco-soudanais indépendant. J'ai designé, conçu et développé seul le site, de la direction artistique à l'intégration frontend, en passant par l'architecture éditoriale. Le projet a connu une première version en Gatsby avec Contentful, puis une refonte complète en Next.js avec PayloadJS afin d'améliorer les performances, la maintenabilité et l'autonomie de publication.",
     url: "https://sudfa-media.com/",
     date: "v1 2020, v2 2024",
     gallery: ["sudfa2.png", "sudfa3.png"],
@@ -32,8 +63,8 @@ export const projectsList = [
     github: "https://github.com/ReseauEntourage/entourage-job-front",
     tech: ["Next", "React", "Node", "NestJS"],
     description:
-      "Dans une squad de 4 dont 2 développeurs, 1 PO et 1 UX, j'ai travaillé pendant 2 ans sur cette plateforme de réinsertion professionnelle pour les plus précaires.",
-    url: "entourage-pro.fr",
+      "Pendant 2 ans, j'ai travaillé dans une squad composée de 2 développeurs, 1 Product Owner et 1 UX Designer sur Entourage Pro, une plateforme solidaire de réinsertion professionnelle destinée aux personnes en situation de précarité. J'ai contribué au développement frontend et backend de fonctionnalités clés pour accompagner les candidats, les coachs bénévoles et les entreprises engagées dans la création de réseau professionnel.",
+    url: "https://entourage-pro.fr",
     date: "2022/2024",
     gallery: ["entouragepro2.png", "entouragepro3.png"],
   },
@@ -42,7 +73,7 @@ export const projectsList = [
     picture: "optedif.png",
     tech: ["Next", "React", "Node", "ExpressJS"],
     description:
-      "Dans une squad de 3 développeurs et 1 DevOps, je travaille comme consultant pour aider à l'amélioration des process, l'implémentation de tests, l'optimisation du code et le respect des normes de sécurité.",
+      "En tant que consultant au sein d'une équipe de 3 développeurs et 1 DevOps, j'ai accompagné Optedif dans l'amélioration de ses process techniques, l'implémentation de tests, l'optimisation du code et le respect des normes de sécurité. Le projet s'inscrit dans un contexte de plateforme de formation professionnelle, avec de forts enjeux de fiabilité, de maintenabilité, de performance et de qualité logicielle.",
     url: "https://fr.optedif-formation.fr/",
     date: "2022, 2024",
     gallery: ["optedif.png"],
@@ -53,7 +84,7 @@ export const projectsList = [
     picture: "sodexo.png",
     tech: ["Next", "React", "Node", "HapiJS"],
     description:
-      "Dans une squad de 6 développeurs, 1 PO, 1 QA et 1 UX, j'ai travaillé comme dev fullstack sur la maintenance d'un portail client Sodexo en 4 langues.",
+      "Dans une squad composée de 6 développeurs, 1 Product Owner, 1 QA et 1 UX Designer, j'ai travaillé comme développeur fullstack sur la maintenance et l'évolution d'un portail client Sodexo disponible en 4 langues. Mes missions couvraient le développement de nouvelles fonctionnalités, la correction d'anomalies, l'amélioration de l'expérience utilisateur et la stabilisation d'une application utilisée dans un contexte international.",
     date: "2021/2022",
     gallery: ["sodexo.png"],
     url: null,
@@ -64,7 +95,7 @@ export const projectsList = [
     picture: "stoff.png",
     tech: ["Gatsby", "React", "Contentful", "Stripe"],
     description:
-      "Pour une revue de sciences humaines, j'ai développé une version numérique avec un mini e-commerce pour commander la version papier.",
+      "Pour une revue de sciences humaines, j'ai développé une version numérique complète permettant de valoriser les articles, les numéros publiés et la commande de la revue papier. Le site associe Gatsby, React, Contentful et Stripe afin de proposer une expérience éditoriale fluide, un CMS administrable et un mini e-commerce intégré.",
     url: "https://www.stoff.fr/",
     date: "2021",
     gallery: ["stoff2.png", "stoff3.png"],
@@ -75,7 +106,7 @@ export const projectsList = [
     picture: "ringover.png",
     tech: ["VanillaJS", "PHP"],
     description:
-      "Dans une squad 2 développeurs, j'ai travaillé sur la maintenance et le développement de ce site dans son ancienne version de 2020. La version aujourd'hui en ligne a beaucoup évolué",
+      "Au sein d'une équipe de 2 développeurs, j'ai participé à la maintenance et à l'évolution de l'ancienne version du site Ringover, une plateforme SaaS spécialisée dans la téléphonie cloud et les communications d'entreprise. Mes missions portaient sur le développement frontend, l'intégration de pages marketing, la correction de bugs et l'amélioration continue d'un site à fort enjeu commercial.",
     url: "https://www.ringover.fr/",
     date: "2020/2021",
     gallery: ["ringover2.png"],
@@ -86,7 +117,7 @@ export const projectsList = [
     picture: "ringovermeet.png",
     tech: ["React"],
     description:
-      "Pour Ringover, j'ai travaillé à la maintenance du frontend d'une appli de visioconférence.",
+      "Pour Ringover, j'ai travaillé à la maintenance frontend de Meet, une application de visioconférence développée en React. Le projet m'a permis d'intervenir sur une interface produit orientée communication en temps réel, avec des enjeux de stabilité, d'ergonomie et de qualité d'expérience utilisateur.",
     gallery: ["ringovermeet.png"],
     date: "2020/2021",
     url: null,
@@ -97,7 +128,7 @@ export const projectsList = [
     picture: "MP.png",
     tech: ["React"],
     description:
-      "Dans le cadre d'une collaboration avec une designeuse, nous avions proposé un site vitrine pour montrer notre travail.",
+      "Dans le cadre d'une collaboration avec une designeuse, nous avons proposé un site vitrine destiné à présenter notre travail commun, notre approche créative et nos compétences complémentaires. Le projet mettait en avant une interface React sur mesure, une direction artistique soignée et une présentation claire de nos savoir-faire en design et développement web.",
     gallery: ["MP2.png", "MP3.png", "MP4.png"],
     date: "2020",
     url: null,
@@ -108,7 +139,7 @@ export const projectsList = [
     picture: "womeninwar.png",
     tech: ["Gatsby", "React", "Contentful"],
     description:
-      "Pour l'association Femaid / Women in war, j'ai développé la version numérique d'un livre de témoignages de femmes dans les pays en guerre pendant le Covid.",
+      "Pour l'association Femaid / Women in War, j'ai développé la version numérique d'un livre de témoignages consacré aux expériences de femmes vivant dans des pays en guerre pendant la période du Covid. Le site propose une publication accessible en ligne, structurée autour de récits, textes et contenus éditoriaux liés au genre, aux conflits armés et à la mémoire collective.",
     url: "https://womeninwarpublications.org/",
     gallery: ["womeninwar.png"],
     date: "2021",
@@ -119,7 +150,7 @@ export const projectsList = [
     picture: "thomasjardin.png",
     tech: ["React"],
     description:
-      "Pour un photographe, j'ai développé un porfolio. Aujourd'hui, le site n'est plus en ligne.",
+      "Pour un photographe, j'ai développé un portfolio en React destiné à mettre en valeur ses séries photographiques à travers une interface sobre, immersive et centrée sur l'image. Le projet privilégiait la lisibilité visuelle, la navigation fluide et une présentation élégante des travaux artistiques. Le site n'est aujourd'hui plus en ligne.",
     gallery: ["thomasjardin-big.png"],
     date: "2020",
     url: null,
@@ -129,7 +160,8 @@ export const projectsList = [
     title: "Portfolio v1",
     picture: "portfolioV1.png",
     tech: ["React"],
-    description: "Mon premier porfolio en sortant d'études",
+    description:
+      "Premier portfolio développé à la sortie de mes études, ce projet m'a permis de poser les bases de mon identité de développeur frontend. Réalisé en React, il présentait mes premiers projets, mes compétences techniques et mon envie de créer des interfaces web modernes, claires et interactives.",
     gallery: ["portfolioV12.png"],
     date: "2020",
     url: null,
