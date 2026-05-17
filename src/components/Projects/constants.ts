@@ -8,6 +8,7 @@ export const projectsList = [
     url: "https://citoyens.ecov.fr/",
     date: "2025/2026",
     gallery: ["ecov.png"],
+    github: null,
   },
   {
     title: "Route du champagne",
@@ -18,6 +19,7 @@ export const projectsList = [
     url: "https://route-champagne.fr/",
     date: "2025/2026",
     gallery: ["route-du-champagne-2.png", "route-du-champagne.png"],
+    github: null,
   },
   {
     title: "Wespring",
@@ -28,6 +30,7 @@ export const projectsList = [
     url: "https://wespring.com",
     date: "2024/2026",
     gallery: ["wespring.png"],
+    github: null,
   },
   {
     title: "Portfolio",
