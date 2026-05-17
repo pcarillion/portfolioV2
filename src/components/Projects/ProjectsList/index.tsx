@@ -8,7 +8,7 @@ import { ProgressCircle } from "@/components/utils/ProgressCircle";
 import { ProjectModal } from "../ProjectModal";
 
 export const ProjectsList = () => {
-  const projectListRef = useRef<any>(null);
+  const projectListRef = useRef<HTMLUListElement>(null);
   const { scrollYProgress } = useScroll({
     container: projectListRef,
   });
@@ -16,8 +16,30 @@ export const ProjectsList = () => {
   // modal gestion
   const [currentProject, setCurrentProject] = useState<number | null>(null);
   useEffect(() => {
-    console.log(currentProject);
+    document.body.style.overflow = currentProject !== null ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [currentProject]);
+
+  const handleWheel = (event: React.WheelEvent<HTMLUListElement>) => {
+    if (currentProject !== null) return;
+
+    const list = projectListRef.current;
+    if (!list) return;
+
+    const isScrollingUp = event.deltaY < 0;
+    const isScrollingDown = event.deltaY > 0;
+    const isAtTop = list.scrollTop <= 0;
+    const isAtBottom =
+      list.scrollTop + list.clientHeight >= list.scrollHeight - 1;
+
+    if ((isAtTop && isScrollingUp) || (isAtBottom && isScrollingDown)) {
+      event.preventDefault();
+      window.scrollBy({ top: event.deltaY });
+    }
+  };
 
   return (
     <>
@@ -26,8 +48,11 @@ export const ProjectsList = () => {
         setCurrentProject={setCurrentProject}
       />
       <ul
-        className="w-full h-full box-border overflow-y-scroll overflow-x-hidden snap-y snap-mandatory relative"
+        className={`w-full h-full box-border overflow-x-hidden snap-y snap-mandatory relative ${
+          currentProject !== null ? "overflow-y-hidden" : "overflow-y-scroll"
+        }`}
         ref={projectListRef}
+        onWheel={handleWheel}
       >
         <div
           className="sticky bottom-0 md:top-0 right-0 "
