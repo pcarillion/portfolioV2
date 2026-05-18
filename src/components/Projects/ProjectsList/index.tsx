@@ -6,8 +6,10 @@ import { ProjectLi } from "./ProjectLi";
 import { useScroll } from "framer-motion";
 import { ProgressCircle } from "@/components/utils/ProgressCircle";
 import { ProjectModal } from "../ProjectModal";
+import { ListMode } from "..";
+import { ProjectCard } from "./ProjectCard";
 
-export const ProjectsList = () => {
+export const ProjectsList = ({ listMode }: { listMode: ListMode }) => {
   const projectListRef = useRef<HTMLUListElement>(null);
   const { scrollYProgress } = useScroll({
     container: projectListRef,
@@ -47,31 +49,54 @@ export const ProjectsList = () => {
         index={currentProject}
         setCurrentProject={setCurrentProject}
       />
-      <ul
-        className={`w-full h-full box-border overflow-x-hidden snap-y snap-mandatory relative ${
-          currentProject !== null ? "overflow-y-hidden" : "overflow-y-scroll"
-        }`}
-        ref={projectListRef}
-        onWheel={handleWheel}
-      >
-        <div
-          className="sticky bottom-0 md:top-0 right-0 "
-          style={{ width: "80px", height: "80px" }}
+      {listMode === "list" && (
+        <ul
+          className={`w-full h-full box-border overflow-x-hidden snap-y snap-mandatory relative ${
+            currentProject !== null ? "overflow-y-hidden" : "overflow-y-scroll"
+          }`}
+          ref={projectListRef}
+          onWheel={handleWheel}
         >
-          <ProgressCircle y={scrollYProgress} />
-        </div>
-        {projectsList.map((proj, i) => {
-          return (
-            <ProjectLi
-              key={proj.title}
-              project={proj}
-              index={i}
-              containerRef={projectListRef}
-              setCurrentProject={setCurrentProject}
-            />
-          );
-        })}
-      </ul>
+          <div
+            className="sticky bottom-0 md:top-0 right-0 "
+            style={{ width: "80px", height: "80px" }}
+          >
+            <ProgressCircle y={scrollYProgress} />
+          </div>
+          {projectsList.map((proj, i) => {
+            return (
+              <ProjectLi
+                key={proj.title}
+                project={proj}
+                index={i}
+                containerRef={projectListRef}
+                setCurrentProject={setCurrentProject}
+              />
+            );
+          })}
+        </ul>
+      )}
+      {listMode === "grid" && (
+        <ul
+          className={`grid h-full w-full grid-cols-1 content-start gap-4 overflow-x-hidden pr-1 md:grid-cols-2 md:gap-6 lg:grid-cols-3 ${
+            currentProject !== null ? "overflow-y-hidden" : "overflow-y-scroll"
+          }`}
+          ref={projectListRef}
+          onWheel={handleWheel}
+        >
+          {projectsList.map((proj, i) => {
+            return (
+              <ProjectCard
+                key={proj.title}
+                project={proj}
+                index={i}
+                containerRef={projectListRef}
+                setCurrentProject={setCurrentProject}
+              />
+            );
+          })}
+        </ul>
+      )}
     </>
   );
 };

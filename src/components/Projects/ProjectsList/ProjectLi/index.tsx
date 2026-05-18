@@ -8,23 +8,23 @@ import { useIsMobile } from "@/hooks/useIsMobile";
 
 export const ProjectLi = ({
   project,
-  containerRef,
+  // containerRef,
   setCurrentProject,
   index,
 }: {
   project: any;
   index: number;
-  containerRef: React.MutableRefObject<any>;
+  containerRef?: React.MutableRefObject<any>;
   setCurrentProject: Dispatch<SetStateAction<number | null>>;
 }) => {
   const targetRef = useRef<HTMLLIElement>(null);
-  const { scrollYProgress } = useScroll({
-    container: containerRef,
-    target: targetRef,
-    offset: ["start end", "end end"],
-  });
-  const liOpacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const x = useTransform(scrollYProgress, [1, 0], [0, 1000]);
+  // const { scrollYProgress } = useScroll({
+  //   container: containerRef,
+  //   target: targetRef,
+  //   offset: ["start end", "end end"],
+  // });
+  // const liOpacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  // const x = useTransform(scrollYProgress, [1, 0], [0, 1000]);
   const isMobile = useIsMobile();
   const LiContent = (
     <>
