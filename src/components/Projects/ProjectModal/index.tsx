@@ -3,6 +3,10 @@ import { projectsList } from "../constants";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import {
+  ProjectImageName,
+  projectImageDimensions,
+} from "../imageMetadata";
 
 export const ProjectModal = ({
   index,
@@ -24,10 +28,19 @@ export const ProjectModal = ({
           <div className="flex flex-row w-full h-full">
             <div className="w-7/12 overflow-scroll">
               {project.gallery.map((picture, i) => {
+                const dimensions =
+                  projectImageDimensions[picture as ProjectImageName] ??
+                  projectImageDimensions[project.picture as ProjectImageName];
+
                 return (
-                  <img
+                  <Image
                     src={`/assets/${picture}`}
-                    className="w-full mb-4"
+                    width={dimensions.width}
+                    height={dimensions.height}
+                    sizes="(max-width: 768px) 100vw, 58vw"
+                    quality={75}
+                    loading={i === 0 ? "eager" : "lazy"}
+                    className="mb-4 h-auto w-full"
                     key={picture + i}
                     alt={project.title + i}
                   />

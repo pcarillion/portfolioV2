@@ -34,6 +34,7 @@ export const ProjectCard = ({
             src={`/assets/${project.picture}`}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
+            quality={70}
             alt={project.title}
             className="object-cover object-top grayscale transition duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0 dark:brightness-75 dark:group-hover:brightness-100"
           />

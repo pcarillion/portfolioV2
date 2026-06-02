@@ -35,6 +35,9 @@ export const ProjectLi = ({
         <Image
           src={`/assets/${project.picture}`}
           fill
+          sizes="(max-width: 768px) 100vw, calc(100vw - 24rem)"
+          quality={70}
+          loading={index === 0 ? "eager" : "lazy"}
           style={{
             objectFit: "cover",
             objectPosition: "right top",
@@ -42,7 +45,7 @@ export const ProjectLi = ({
             zIndex: "-1",
           }}
           alt={project.title}
-          className="grayscale dark:brightness-50 transition-all duration-500 ease-out group-hover:grayscale-0 group-hover:brightness-75 glow:ring-1 glow:grayscale-0 glow:brightness-100 glow:ring-glow"
+          className="grayscale-[0.8] saturate-[0.32] brightness-90 dark:brightness-50 transition-all duration-500 ease-out glow:ring-1 glow:grayscale-0 glow:saturate-100 glow:brightness-100 glow:ring-glow"
         />
         <div className="absolute inset-0 bg-white bg-opacity-10 dark:bg-opacity-0 pointer-events-none"></div>
       </div>
