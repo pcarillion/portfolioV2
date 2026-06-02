@@ -14,6 +14,7 @@ export const ProjectCard = ({
 }) => {
   const visibleTech = project.tech.slice(0, 3);
   const hiddenTechCount = project.tech.length - visibleTech.length;
+  const picture = project.previewPicture ?? project.picture;
 
   return (
     <motion.li
@@ -31,7 +32,7 @@ export const ProjectCard = ({
       >
         <div className="relative h-48 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900 md:h-56">
           <Image
-            src={`/assets/${project.picture}`}
+            src={`/assets/${picture}`}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             quality={70}

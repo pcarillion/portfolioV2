@@ -11,6 +11,7 @@ export const projectImageDimensions = {
   "portfolio.png": { width: 3020, height: 1474 },
   "portfolioV1.png": { width: 3024, height: 1544 },
   "portfolioV12.png": { width: 3019, height: 15368 },
+  "previews/wespring.png": { width: 1600, height: 822 },
   "ringover.png": { width: 3024, height: 1482 },
   "ringover2.png": { width: 3024, height: 14509 },
   "ringovermeet.png": { width: 3022, height: 1472 },

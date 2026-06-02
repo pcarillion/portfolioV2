@@ -26,6 +26,7 @@ export const ProjectLi = ({
   // const liOpacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   // const x = useTransform(scrollYProgress, [1, 0], [0, 1000]);
   const isMobile = useIsMobile();
+  const picture = project.previewPicture ?? project.picture;
   const LiContent = (
     <>
       <div
@@ -33,7 +34,7 @@ export const ProjectLi = ({
         style={{ paddingBottom: "30%", maxHeight: "0" }}
       >
         <Image
-          src={`/assets/${project.picture}`}
+          src={`/assets/${picture}`}
           fill
           sizes="(max-width: 768px) 100vw, calc(100vw - 24rem)"
           quality={70}

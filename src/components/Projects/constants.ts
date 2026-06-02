@@ -24,6 +24,7 @@ export const projectsList = [
   {
     title: "Wespring",
     picture: "wespring.png",
+    previewPicture: "previews/wespring.png",
     tech: ["Next", "React", "PayloadJS", "Prisma", "Shopify"],
     description:
       "Dans une squad de 4 développeurs chez Nivalis Studio, j'ai travaillé sur la refonte et l'évolution d'un site e-commerce Shopify pour une marque de lessive et de produits ménagers. Le projet mêle performance frontend, intégration e-commerce, gestion de catalogue, CMS headless et optimisation du parcours d'achat pour proposer une expérience utilisateur claire, rapide et orientée conversion.",
