@@ -1,36 +1,39 @@
 export const projectsList = [
   {
     title: "Ecov citoyens",
-    picture: "ecov.png",
+    picture: "optimized/ecov.webp",
     tech: ["Next", "React", "Shopify", "Prisma"],
     description:
       "Au sein d'une équipe de 4 développeurs chez Nivalis Studio, j'ai participé au développement d'une plateforme citoyenne dédiée à la mobilité durable et au covoiturage local. Le site permet aux utilisateurs de proposer de nouvelles lignes de covoiturage grâce à une carte interactive, avec une expérience fluide pensée pour favoriser l'engagement territorial et simplifier la participation des citoyens.",
     url: "https://citoyens.ecov.fr/",
     date: "2025/2026",
-    gallery: ["ecov.png"],
+    gallery: ["optimized/ecov.webp"],
     github: null,
   },
   {
     title: "Route du champagne",
-    picture: "route-du-champagne-2.png",
+    picture: "optimized/route-du-champagne-2.webp",
     tech: ["Next", "React", "PayloadJS"],
     description:
       "Au sein d'une équipe de 4 développeurs chez Nivalis Studio, j'ai contribué au développement du site de la Route du Champagne, une expérience web événementielle centrée sur la découverte des villages, caves et itinéraires de la région champenoise. Le projet intègre une carte interactive et un CMS headless avec PayloadJS afin de faciliter la gestion des contenus touristiques, pratiques et éditoriaux.",
     url: "https://route-champagne.fr/",
     date: "2025/2026",
-    gallery: ["route-du-champagne-2.png", "route-du-champagne.png"],
+    gallery: [
+      "optimized/route-du-champagne-2.webp",
+      "optimized/route-du-champagne.webp",
+    ],
     github: null,
   },
   {
     title: "Wespring",
-    picture: "wespring.png",
+    picture: "optimized/wespring.webp",
     previewPicture: "previews/wespring.png",
     tech: ["Next", "React", "PayloadJS", "Prisma", "Shopify"],
     description:
       "Dans une squad de 4 développeurs chez Nivalis Studio, j'ai travaillé sur la refonte et l'évolution d'un site e-commerce Shopify pour une marque de lessive et de produits ménagers. Le projet mêle performance frontend, intégration e-commerce, gestion de catalogue, CMS headless et optimisation du parcours d'achat pour proposer une expérience utilisateur claire, rapide et orientée conversion.",
     url: "https://wespring.com",
     date: "2024/2026",
-    gallery: ["wespring.png"],
+    gallery: ["optimized/wespring.webp"],
     github: null,
   },
   {
@@ -46,7 +49,7 @@ export const projectsList = [
   },
   {
     title: "Sudfa Media",
-    picture: "sudfa.png",
+    picture: "optimized/sudfa.webp",
     github: "https://github.com/pcarillion/sudfa-media-next",
     tech: [
       "v1 Gatsby",
@@ -59,28 +62,28 @@ export const projectsList = [
       "Sudfa est un média franco-soudanais indépendant. J'ai designé, conçu et développé seul le site, de la direction artistique à l'intégration frontend, en passant par l'architecture éditoriale. Le projet a connu une première version en Gatsby avec Contentful, puis une refonte complète en Next.js avec PayloadJS afin d'améliorer les performances, la maintenabilité et l'autonomie de publication.",
     url: "https://sudfa-media.com/",
     date: "v1 2020, v2 2024",
-    gallery: ["sudfa2.png", "sudfa3.png"],
+    gallery: ["optimized/sudfa2.webp", "optimized/sudfa3.webp"],
   },
   {
     title: "Entourage Pro",
-    picture: "entouragepro.png",
+    picture: "optimized/entouragepro.webp",
     github: "https://github.com/ReseauEntourage/entourage-job-front",
     tech: ["Next", "React", "Node", "NestJS"],
     description:
       "Pendant 2 ans, j'ai travaillé dans une squad composée de 2 développeurs, 1 Product Owner et 1 UX Designer sur Entourage Pro, une plateforme solidaire de réinsertion professionnelle destinée aux personnes en situation de précarité. J'ai contribué au développement frontend et backend de fonctionnalités clés pour accompagner les candidats, les coachs bénévoles et les entreprises engagées dans la création de réseau professionnel.",
     url: "https://entourage-pro.fr",
     date: "2022/2024",
-    gallery: ["entouragepro2.png", "entouragepro3.png"],
+    gallery: ["optimized/entouragepro2.webp", "entouragepro3.png"],
   },
   {
     title: "Optedif",
-    picture: "optedif.png",
+    picture: "optimized/optedif.webp",
     tech: ["Next", "React", "Node", "ExpressJS"],
     description:
       "En tant que consultant au sein d'une équipe de 3 développeurs et 1 DevOps, j'ai accompagné Optedif dans l'amélioration de ses process techniques, l'implémentation de tests, l'optimisation du code et le respect des normes de sécurité. Le projet s'inscrit dans un contexte de plateforme de formation professionnelle, avec de forts enjeux de fiabilité, de maintenabilité, de performance et de qualité logicielle.",
     url: "https://fr.optedif-formation.fr/",
     date: "2022, 2024",
-    gallery: ["optedif.png"],
+    gallery: ["optimized/optedif.webp"],
     github: null,
   },
   {
@@ -102,18 +105,18 @@ export const projectsList = [
       "Pour une revue de sciences humaines, j'ai développé une version numérique complète permettant de valoriser les articles, les numéros publiés et la commande de la revue papier. Le site associe Gatsby, React, Contentful et Stripe afin de proposer une expérience éditoriale fluide, un CMS administrable et un mini e-commerce intégré.",
     url: "https://www.stoff.fr/",
     date: "2021",
-    gallery: ["stoff2.png", "stoff3.png"],
+    gallery: ["optimized/stoff2.webp", "optimized/stoff3.webp"],
     github: null,
   },
   {
     title: "Ringover",
-    picture: "ringover.png",
+    picture: "optimized/ringover.webp",
     tech: ["VanillaJS", "PHP"],
     description:
       "Au sein d'une équipe de 2 développeurs, j'ai participé à la maintenance et à l'évolution de l'ancienne version du site Ringover, une plateforme SaaS spécialisée dans la téléphonie cloud et les communications d'entreprise. Mes missions portaient sur le développement frontend, l'intégration de pages marketing, la correction de bugs et l'amélioration continue d'un site à fort enjeu commercial.",
     url: "https://www.ringover.fr/",
     date: "2020/2021",
-    gallery: ["ringover2.png"],
+    gallery: ["optimized/ringover2.webp"],
     github: null,
   },
   {
@@ -133,19 +136,19 @@ export const projectsList = [
     tech: ["React"],
     description:
       "Dans le cadre d'une collaboration avec une designeuse, nous avons proposé un site vitrine destiné à présenter notre travail commun, notre approche créative et nos compétences complémentaires. Le projet mettait en avant une interface React sur mesure, une direction artistique soignée et une présentation claire de nos savoir-faire en design et développement web.",
-    gallery: ["MP2.png", "MP3.png", "MP4.png"],
+    gallery: ["optimized/MP2.webp", "optimized/MP3.webp", "optimized/MP4.webp"],
     date: "2020",
     url: null,
     github: null,
   },
   {
     title: "Women in War Publications",
-    picture: "womeninwar.png",
+    picture: "optimized/womeninwar.webp",
     tech: ["Gatsby", "React", "Contentful"],
     description:
       "Pour l'association Femaid / Women in War, j'ai développé la version numérique d'un livre de témoignages consacré aux expériences de femmes vivant dans des pays en guerre pendant la période du Covid. Le site propose une publication accessible en ligne, structurée autour de récits, textes et contenus éditoriaux liés au genre, aux conflits armés et à la mémoire collective.",
     url: "https://womeninwarpublications.org/",
-    gallery: ["womeninwar.png"],
+    gallery: ["optimized/womeninwar.webp"],
     date: "2021",
     github: null,
   },
@@ -155,7 +158,7 @@ export const projectsList = [
     tech: ["React"],
     description:
       "Pour un photographe, j'ai développé un portfolio en React destiné à mettre en valeur ses séries photographiques à travers une interface sobre, immersive et centrée sur l'image. Le projet privilégiait la lisibilité visuelle, la navigation fluide et une présentation élégante des travaux artistiques. Le site n'est aujourd'hui plus en ligne.",
-    gallery: ["thomasjardin-big.png"],
+    gallery: ["optimized/thomasjardin-big.webp"],
     date: "2020",
     url: null,
     github: null,
@@ -166,7 +169,7 @@ export const projectsList = [
     tech: ["React"],
     description:
       "Premier portfolio développé à la sortie de mes études, ce projet m'a permis de poser les bases de mon identité de développeur frontend. Réalisé en React, il présentait mes premiers projets, mes compétences techniques et mon envie de créer des interfaces web modernes, claires et interactives.",
-    gallery: ["portfolioV12.png"],
+    gallery: ["optimized/portfolioV12.webp"],
     date: "2020",
     url: null,
     github: null,

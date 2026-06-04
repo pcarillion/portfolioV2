@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "optimize-images": "node scripts/optimize-project-images.mjs",
     "tscheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
