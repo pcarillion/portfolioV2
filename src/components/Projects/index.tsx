@@ -23,7 +23,7 @@ export const Projects = () => {
   return (
     <DMContainer>
       <div
-        className="h-50vh w-full relative snap-center  md:h-frame-lg"
+        className="h-50vh w-full relative snap-center md:h-frame-lg"
         ref={projectContainerRef}
       >
         <motion.div

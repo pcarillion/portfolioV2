@@ -17,6 +17,9 @@ const Projects = dynamic(() =>
 const Skills = dynamic(() =>
   import("@/components/Skills").then((mod) => mod.Skills)
 );
+const Logo = dynamic(() =>
+  import("@/components/LogoSection").then((mod) => mod.LogoSection)
+);
 
 const Page = () => {
   return (
@@ -33,6 +36,7 @@ const Page = () => {
       <Home />
       <Skills />
       <Projects />
+      <Logo />
       <Contact />
       <SocialMedias />
     </div>
