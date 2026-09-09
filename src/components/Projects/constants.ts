@@ -42,7 +42,7 @@ export const projectsList = [
     github: "https://github.com/pcarillion/portfolioV2",
     tech: ["Next", "React", "TailwindCSS", "Framer Motion"],
     description:
-      "Portfolio personnel développé avec Next.js, React, TailwindCSS et Framer Motion pour présenter mes projets web, mes expériences fullstack et mon univers graphique. Le site met l'accent sur les animations, la performance, le responsive design et une navigation claire autour de mes réalisations professionnelles.",
+      "Portfolio personnel développé avec Next.js, React, TailwindCSS et Framer Motion pour présenter mes projets web, mes expériences fullstack et mon univers graphique. Le site met l'accent sur les animations, la performance, le responsive design et une navigation claire autour de mes réalisations professionnelles. (petit crédit pour l'agence Les Animals dont je me suis inspiré pour l'animation de scroll des projets)",
     url: "/",
     date: "2024",
     gallery: ["portfolio.png"],

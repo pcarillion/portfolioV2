@@ -14,7 +14,9 @@ import { CircleSlash2, LayoutGrid, Rows3 } from "lucide-react";
 
 export type ListMode = "grid" | "list" | "circle";
 
-const MODE_TRANSITION_EASE = [0.22, 1, 0.36, 1] as const;
+const MODE_TRANSITION_EASE: [number, number, number, number] = [
+  0.22, 1, 0.36, 1,
+];
 
 export const Projects = () => {
   const projectContainerRef = useRef<HTMLElement>(null);
