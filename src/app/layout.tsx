@@ -51,7 +51,10 @@ export default function RootLayout({
      * - beginning logo animation
      *
      */
-    <html lang="fr">
+    <html
+      lang="fr"
+      className="snap-y snap-proximity scroll-smooth scroll-pt-5 md:scroll-pt-10"
+    >
       <body
         className={`${tajawal.className} bg-neutral-950 sm:max-w-sm relative`}
       >

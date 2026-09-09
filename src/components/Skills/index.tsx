@@ -23,11 +23,17 @@ export const Skills = () => {
         <div className="w-full box-border px-4 md:p-12" ref={containerRef}>
           <motion.div style={{ y }}>
             <div className="dark:text-white text-base w-full ">
-              {skillsTable.map(({ title, skills }) => {
+              {skillsTable.map(({ title, skills }, index) => {
                 return (
                   <div className="first:pt-0 pt-8 md:pt-4 " key={title}>
                     <Glow color={isDM ? "white" : ""}>
-                      <div className="flex flex-col md:flex-row border-b border-black dark:border-gray-500 pb-4 md:pb-10 w-full glow:ring-1 glow:text-glow glow:border-glow glow:ring-glow ">
+                      <div
+                        className={`flex w-full flex-col pb-4 glow:border-glow glow:text-glow glow:ring-1 glow:ring-glow md:flex-row md:pb-10 ${
+                          index === skillsTable.length - 1
+                            ? ""
+                            : "border-b border-black dark:border-gray-500"
+                        }`}
+                      >
                         <div className="mb-4 md:mb-0 md:pr-20 md:w-24">
                           {title}
                         </div>
@@ -36,7 +42,7 @@ export const Skills = () => {
                             return (
                               <div
                                 key={skill}
-                                className="px-4 py-1 mr-4 mb-4 border border-black border-gray-500 glow:ring-1 glow:text-glow glow:border-glow glow:ring-glow glow:bg-glow/[.015]"
+                                className="px-4 py-1 mr-4 mb-4 border border-black dark:border-gray-500 glow:ring-1 glow:text-glow glow:border-glow glow:ring-glow glow:bg-glow/[.015]"
                               >
                                 {skill}
                               </div>

@@ -21,7 +21,7 @@ export const Contact = () => {
   }, [openModal]);
   return (
     <DMContainer>
-      <div className="fixed top-10 md:top-14 left-10 md:left-14 h-20 w-20">
+      <div className="fixed left-10 top-10 z-[200] h-20 w-20 md:left-14 md:top-14">
         <button
           className="relative h-6 w-6 dark:opacity-60 hover:opacity-60 dark:hover:opacity-100 transition-all duration-300 ease-in-out"
           onClick={() => setOpenModal(true)}

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "optimize-images": "node scripts/optimize-project-images.mjs",
-    "tscheck": "tsc -p tsconfig.json --noEmit"
+    "tscheck": "tsc -p tsconfig.json --noEmit",
+    "create-context": "codectx analyze src --output CONTEXT.MD --tokens 30000"
   },
   "dependencies": {
     "@codaworks/react-glow": "^1.0.6",

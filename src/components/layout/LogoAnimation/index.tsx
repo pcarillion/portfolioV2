@@ -20,7 +20,7 @@ export const LogoAnimation = () => {
     <div
       className={`${
         fullScreen ? 'h-full w-full bg-neutral-950' : 'h-10 w-10 bg-transparent'
-      } transition-all duration-500 ease-in-out fixed bottom-0 right-0 z-50`}
+      } transition-all duration-500 ease-in-out fixed bottom-0 right-0 z-[1000]`}
     >
       <div className="flex justify-center items-center h-full w-full">
         <div

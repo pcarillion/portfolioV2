@@ -51,7 +51,7 @@ export const ProjectLi = ({
         <div className="absolute inset-0 bg-white bg-opacity-10 dark:bg-opacity-0 pointer-events-none"></div>
       </div>
       <motion.div
-        className="h-full w-full flex flex-col justify-center items-end absolute top-0 md:left-48"
+        className="relative mt-3 flex w-full justify-end md:absolute md:left-48 md:top-0 md:mt-0 md:h-full md:flex-col md:items-end md:justify-center"
         style={
           {
             // x,
@@ -60,14 +60,11 @@ export const ProjectLi = ({
       >
         <button
           onClick={() => setCurrentProject(index)}
-          className="group/button w-min text-right font-light dark:text-white md:mr-8 focus-visible:outline-none"
+          className="group/button max-w-[75%] text-right font-light focus-visible:outline-none dark:text-white md:mr-8 md:w-min md:max-w-none"
         >
           <span className="relative inline-block">
             {project.title}
             <span className="absolute -bottom-2 right-0 h-px w-0 bg-current transition-all duration-300 ease-out group-hover/button:w-full group-focus-visible/button:w-full" />
-          </span>
-          <span className="mt-4 block text-base opacity-0 translate-y-2 transition-all duration-300 ease-out group-hover/button:opacity-80 group-hover/button:translate-y-0 group-focus-visible/button:opacity-80 group-focus-visible/button:translate-y-0">
-            Voir le projet
           </span>
         </button>
       </motion.div>
@@ -77,7 +74,7 @@ export const ProjectLi = ({
     <>
       <motion.li
         ref={targetRef}
-        className="group text-4xl md:text-6xl h-full w-full relative snap-center md:px-48"
+        className="group relative box-border h-[clamp(260px,38vh,340px)] w-full snap-start px-4 pt-32 text-4xl md:h-frame-lg md:px-48 md:pt-28 md:text-6xl"
         style={
           {
             // opacity: liOpacity,

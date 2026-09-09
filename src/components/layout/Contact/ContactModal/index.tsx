@@ -91,7 +91,7 @@ export const ContactModal = ({
 
   return (
     <div ref={scope}>
-      <div id="contact_modal__c" className={`fixed top-0 left-0 z-30`}>
+      <div id="contact_modal__c" className="fixed left-0 top-0 z-[100]">
         <div className={`relative`}>
           {colums.map((el) => {
             return (

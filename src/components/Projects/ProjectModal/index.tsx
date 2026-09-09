@@ -3,6 +3,7 @@ import { projectsList } from "../constants";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import {
   ProjectImageName,
   projectImageDimensions,
@@ -23,7 +24,7 @@ export const ProjectModal = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className={`fixed top-10 left-10 right-10 bottom-10 z-30 bg-neutral-50 dark:bg-neutral-900 p-4 animate-all ease-in-out duration-200`}
+          className={`fixed top-10 left-10 right-10 bottom-10 z-[100] bg-neutral-50 dark:bg-neutral-900 p-4 animate-all ease-in-out duration-200`}
         >
           <div className="flex flex-row w-full h-full">
             <div className="w-7/12 overflow-scroll">
@@ -64,9 +65,30 @@ export const ProjectModal = ({
                 />
               </button>
               {project.url ? (
-                <Link href={project.url}>
-                  <h2 className="hover:opacity-60 text-6xl">{project.title}</h2>
-                </Link>
+                <div className="flex flex-col items-end">
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ouvrir le site de ${project.title} dans un nouvel onglet`}
+                    className="mb-3 transition-opacity duration-300 hover:opacity-60 focus-visible:outline-none focus-visible:opacity-60"
+                  >
+                    <ArrowUpRight
+                      aria-hidden="true"
+                      className="size-9"
+                      strokeWidth={0.8}
+                    />
+                  </Link>
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h2 className="text-6xl hover:opacity-60">
+                      {project.title}
+                    </h2>
+                  </Link>
+                </div>
               ) : (
                 <h2 className=" text-6xl animate-all ease-in-out duration-300">
                   {project.title}
